@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: #1F2937;
+    width: 72vw;
+    height: 15vh;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+.gameBoardWrapper {
+    display: flex;
+    justify-content: center;
+
+}
+.gameBoard {
+    height: 75vh;
+    width: 45vw;
+    background-color: red;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+svg {
+    height: 100px;    
+}
+
+.choiceCard {
+    background-color: white;
+    height: 200px;
+    width: 150px;
+    border-radius: 15px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #1F2937;
+    width: 72vw;
+    height: 10vh;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #E5E7EB;
+}
