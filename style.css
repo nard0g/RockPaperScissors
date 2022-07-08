@@ -1,11 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Bungee', cursive;
+    color: white;
+}
 
+body {
+    background-color: #252525;
 }
 
 header {
-    background-color: #1F2937;
+    background-color: #8e149c;
     width: 72vw;
     height: 15vh;
     padding-left: 14vw;
@@ -17,29 +22,47 @@ header {
 
 h1 {
     color: white;
+    font-size: 4rem;
 }
 
-.gameBoardWrapper {
-    display: flex;
-    justify-content: center;
-
-}
 .gameBoard {
     height: 75vh;
-    width: 45vw;
-    background-color: red;
+    width: 46vw;
+    background-color: #252525;
+    margin: 0 27vw;
     display: flex;
-    justify-content:space-around;
-    align-items:center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 svg {
-    height: 100px;    
+    width: 90%;
+    fill: white;
 }
 
-.choiceCard {
-    background-color: white;
-    height: 200px;
+.resultsArea {
+    height: 40vh;
+    width: 46vw;
+}
+
+.messages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    font-size: 1.25rem;
+}
+
+.resultCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerChoiceResult, .computerChoiceResult {
+    background-color: #8e149c;
+    height: 150px;
     width: 150px;
     border-radius: 15px;
     display: flex;
@@ -47,8 +70,62 @@ svg {
     justify-content: center;
 }
 
+.playerScoreboard, .computerScoreboard {
+    margin: 1rem;
+}
+
+.choiceResults {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.choiceArea {
+    text-align: center;
+}
+
+.cardWrapper {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    padding-top: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.playerChoices {
+    height: 25vh;
+    width: 46vw;
+    display: flex;
+    align-items: center;
+
+}
+
+.choiceCard {
+    background-color: #8e149c;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.choiceCard:hover {
+    background-color: #b924c9;
+    transition: .15s;
+    height: 175px;
+    width: 175px;
+    cursor: pointer;
+}
+
 footer {
-    background-color: #1F2937;
+    background-color: #8e149c;
     width: 72vw;
     height: 10vh;
     padding-left: 14vw;
@@ -58,4 +135,16 @@ footer {
     align-items: center;
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.github {
+    margin-left: 2rem;
+    width: 32px;
+    height: 32px;
+}
+
+.github:hover {
+    height: 38px;
+    width: 38px;
+    transition: .15s;
 }
