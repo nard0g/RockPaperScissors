@@ -60,6 +60,11 @@ svg {
     justify-content: center;
 }
 
+.scoreUpdate {
+    font-size: 2rem;
+    transition: .25s;
+}
+
 .playerChoiceResult, .computerChoiceResult {
     background-color: #8e149c;
     height: 150px;
@@ -72,6 +77,8 @@ svg {
 
 .playerScoreboard, .computerScoreboard {
     margin: 1rem;
+    height: 3rem;
+    align-items: flex-end;
 }
 
 .choiceResults {
@@ -147,4 +154,35 @@ footer {
     height: 38px;
     width: 38px;
     transition: .15s;
+}
+
+.modal {
+    height: 70vh;
+    width: 60vw;
+    margin: 12vw 20vw;
+    background-color: #b924c9;
+    border: none;
+    border-radius: 25px;
+}
+
+.modalContent {
+    outline: 1px solid red;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameEndMessage {
+    font-size: 5rem;
+    padding: 2rem;
+}
+
+.resetGame {
+    height: 4rem;
+    width: 12rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #252525;
 }
